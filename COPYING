@@ -1,0 +1,5 @@
+This little project is shared under the BSD Clause 3 license. I request that
+you submit any fixes back to this repo so that others can use your fixes, 
+whether you are using the scripts contained here for your own project or to
+compile PyPWA and its dependencies. If ever requested I may even split this
+repo into multiple repos for each of the dependencies themselves.
