@@ -8,16 +8,16 @@ Indentions are based on which packages are needed by which packages. For example
 if you only want to install PyMultiNest, the packages you would need to install
 are Cuba and MultiNest.
 
- * PyPWA
-  * appdirs
-  * iminuit
-  * PyMultiNest
+PyPWA
+ * appdirs
+ * iminuit
+ * PyMultiNest
    * Cuba
    * MultiNest
-  * pytest-cov
-  * pytest-runner
+ * pytest-cov
+ * pytest-runner
    * hgtools
-  * tabulate
+ * tabulate
 
 ## Notes:
 1. If you are installing the software across multiple systems, compile the
