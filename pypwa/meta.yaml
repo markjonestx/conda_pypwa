@@ -1,0 +1,33 @@
+package:
+  name: pypwa
+  version: "2.0.0b1"
+
+source:
+  git_rev: v2.0.0b1
+  git_url: git@github.com:JeffersonLab/PyPWA.git
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - iminuit
+    - appdirs
+    - tabulate
+    - pyyaml
+    - numpy
+    - pytest
+    - pytest-cov
+    - pytest-runner
+  run:
+    - python
+    - iminuit
+    - appdirs
+    - tabulate
+    - pyyaml
+    - numpy
+
+
+about:
+  home: https://github.com/JeffersonLab/PyPWA
+  license: GNU General Public License v3 (GPLv3)
+  summary: "Pythonic Partial Wave Analysis Toolkit."

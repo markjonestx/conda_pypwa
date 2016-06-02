@@ -1,0 +1,53 @@
+package:
+  name: pymultinest
+  version: "1.6"
+
+source:
+  fn: pymultinest-1.6.tar.gz
+  url: https://files.pythonhosted.org/packages/a2/23/de263f7420aff2d11e4f09b70236afda90d8b714a07b39b680bd22a6c486/pymultinest-1.6.tar.gz
+  md5: 9c555d5db9672d02c0bd5fdec7318c38
+#  patches:
+   # List any patch files here
+   # - fix.patch
+
+# build:
+  # noarch_python: True
+  # preserve_egg_dir: True
+  # entry_points:
+    # Put any entry points (scripts to be generated automatically) here. The
+    # syntax is module:function.  For example
+    #
+    # - pymultinest = pymultinest:main
+    #
+    # Would create an entry point called pymultinest that calls pymultinest.main()
+
+
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  # number: 1
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - numpy
+    - scipy
+    - matplotlib
+
+  run:
+    - python
+    - numpy
+    - scipy
+    - matplotlib
+    - multinest
+    - cuba
+
+
+about:
+  home: http://johannesbuchner.github.com/PyMultiNest/
+  license: GPLv3
+  summary: 'Access modules for the MultiNest, APEMoST, Cuba and PolyChord integration libraries'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
