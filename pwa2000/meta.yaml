@@ -1,0 +1,19 @@
+package:
+  name: pwa2000
+  version: "20200530" # The last update date
+
+source:
+  git_rev: master
+  git_url: https://github.com/markjonestx/PyPWA-Utilities.git
+
+
+requirements:
+  build:
+    - {{ compiler('cxx') }}
+    - cmake
+    - numpy >=1.12
+
+about:
+  home: https://github.com/markjonestx/PyPWA-Utilities
+  license: BSD
+  summary: "GAMP and PPGEN"
