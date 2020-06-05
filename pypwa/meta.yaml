@@ -1,9 +1,9 @@
 package:
   name: pypwa
-  version: "3.0.0b1"
+  version: "3.0.0"
 
 source:
-  git_rev: development
+  git_rev: master
   git_url: https://github.com/JeffersonLab/PyPWA.git
 
 
