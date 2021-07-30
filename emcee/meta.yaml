@@ -1,0 +1,27 @@
+package:
+  name: emcee
+  version: "3.1.0"
+
+source:
+  git_rev: "v3.1.0"
+  git_url: https://github.com/dfm/emcee.git
+
+
+requirements:
+  build:
+    - python>=3.6,<4
+    - setuptools>=40
+    - setuptools_scm
+    - numpy>=1.18,<2
+    - scipy
+  run:
+    - python>=3.6,<4
+    - numpy>=1.18,<2
+    - scipy
+
+
+
+about:
+  home: https://emcee.readthedocs.io
+  license: MIT
+  summary: "The Python ensemble sampling toolkit for MCMC"
