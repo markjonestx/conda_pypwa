@@ -1,0 +1,20 @@
+FROM nvidia/cuda:11.2.0-cudnn8-devel-ubuntu20.04 as pwa2000
+
+SHELL ["/bin/bash", "-c"]
+ENV BUILD_CUPY=ON
+ENV CUPY_VERSION=112
+ENV ALL_PYTHON=ON
+
+COPY ./install_pwa2000.sh ./
+RUN ./install_pwa2000.sh
+
+
+FROM pwa2000 as pypwa
+COPY ./install_python.sh ./
+RUN ./install_python.sh
+
+
+FROM pypwa
+COPY ./install_root.sh ./
+RUN ./install_root.sh
+RUN source /usr/local/bin/thisroot.sh

@@ -1,0 +1,13 @@
+FROM nvidia/cuda:11.2.0-runtime-ubuntu20.04 as pwa2000
+
+SHELL ["/bin/bash", "-c"]
+ENV BUILD_CUPY=ON
+ENV CUPY_VERSION=112
+
+COPY ./install_pwa2000.sh ./
+RUN ./install_pwa2000.sh
+
+
+FROM pwa2000
+COPY ./install_python.sh ./
+RUN ./install_python.sh
